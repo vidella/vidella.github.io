@@ -1,3 +1,3 @@
-# Vidella — currently cooking
+# vidella//currently cooking
 
 A temporary interactive portfolio landing page.
