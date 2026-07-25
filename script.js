@@ -5,19 +5,12 @@ const emailLink = document.querySelector("#emailLink");
 
 function setOpen(open) {
   widget.classList.toggle("is-open", open);
-  widget.classList.toggle("is-jumping", !open);
-
   card.setAttribute("aria-expanded", String(open));
   card.setAttribute(
     "aria-label",
     open ? "Close Vidella's note" : "Open Vidella's note",
   );
 }
-
-// Start jumping as soon as the page loads
-requestAnimationFrame(() => {
-  widget.classList.add("is-jumping");
-});
 
 card.addEventListener("click", () => {
   setOpen(!widget.classList.contains("is-open"));

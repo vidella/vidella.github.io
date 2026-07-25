@@ -210,22 +210,35 @@ body {
 
 @media (max-width: 640px) {
   .landing {
-    padding: 95px 4vw 38px;
+    min-height: 100svh;
+    height: 100dvh;
+    padding: 0 16px;
+    place-items: initial;
   }
 
   .landing::before {
-    width: 92vw;
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    width: min(72vw, 360px);
+    max-height: 72svh;
+    aspect-ratio: 564 / 1000;
+    border-radius: 10px;
+    background-image: url("./assets/placeholder-portfolio-mobile.jpeg");
+    background-size: cover;
+    box-shadow: 0 14px 38px rgba(93, 70, 42, 0.12);
+    transform: translate(-50%, -50%);
   }
 
   .mail-widget {
-    top: 15px;
-    right: 15px;
-    width: 90px;
-    height: 76px;
+    top: max(18px, env(safe-area-inset-top));
+    right: 18px;
+    width: 82px;
+    height: 70px;
   }
 
   .mail-widget.is-open {
-    width: calc(100vw - 28px);
+    width: calc(100vw - 36px);
     height: 214px;
   }
 
@@ -265,32 +278,5 @@ body {
 
   .mail-widget {
     animation: none !important;
-  }
-}
-
-#mailWidget.is-jumping:not(.is-open) {
-  animation: mail-jump 1.8s ease-in-out infinite;
-}
-
-@keyframes mail-jump {
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg);
-  }
-
-  15% {
-    transform: translateY(-10px) rotate(-2deg);
-  }
-
-  30% {
-    transform: translateY(0) rotate(0deg);
-  }
-
-  45% {
-    transform: translateY(-6px) rotate(2deg);
-  }
-
-  60% {
-    transform: translateY(0) rotate(0deg);
   }
 }
