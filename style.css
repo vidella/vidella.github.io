@@ -124,14 +124,6 @@ a {
   height: 94px;
 }
 
-.pointer-line {
-  position: absolute;
-  top: 50%;
-  right: calc(100% + 8px);
-  width: 34px;
-  border-top: 1px dashed rgba(23, 23, 23, 0.74);
-}
-
 .envelope-button {
   width: 100%;
   height: 100%;
@@ -217,7 +209,7 @@ a {
 .note-body h1 {
   max-width: 470px;
   margin: 20px 0 0;
-  font-family: Helvetica, sans-serif;
+  ffont-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
   font-size: clamp(38px, 7vw, 58px);
   line-height: 0.9;
   letter-spacing: -0.055em;
@@ -225,7 +217,7 @@ a {
 
 .note-body > p:not(.meanwhile) {
   margin: 17px 0 0;
-  font-family: Georgia, serif;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
   font-size: clamp(13px, 2.3vw, 16px);
   line-height: 1.45;
 }
