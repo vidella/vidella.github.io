@@ -441,3 +441,9 @@ a {
     transition-duration: 0.01ms;
   }
 }
+
+@media (max-width: 640px) {
+  .envelope-button {
+    animation: notice-bounce 2.5s ease-in-out infinite !important;
+  }
+}
