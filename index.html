@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>vidella//currently cooking</title>
+    <meta
+      name="description"
+      content="Vidella Lorensia is a product designer and creative technologist building interactive web experiences, fashion-tech products and 3D-printed designs."
+    />
+    <meta name="author" content="Vidella Lorensia" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main class="landing">
+      <span class="build-label">portfolio_wireframe.v0.1</span>
+      <span class="build-status">[ currently panicking ]</span>
+
+      <figure class="hamster-frame">
+        <img src="./assets/hamster.png" alt="A surprised hamster" />
+        <figcaption>fig. 01 — live footage</figcaption>
+      </figure>
+
+      <div class="mail-control">
+        <span class="pointer-line" aria-hidden="true"></span>
+        <button
+          class="envelope-button"
+          id="envelopeButton"
+          type="button"
+          aria-controls="notePanel"
+          aria-expanded="false"
+          aria-label="Open Vidella's note"
+        >
+          <img src="./assets/envelope-closed.svg" alt="" aria-hidden="true" />
+        </button>
+        <span class="open-hint">psppspss…</span>
+      </div>
+
+      <section
+        class="note-panel"
+        id="notePanel"
+        aria-hidden="true"
+        aria-label="A note from Vidella"
+      >
+        <header class="note-header">
+          <span>vidella//draft</span>
+        </header>
+
+        <div class="note-body">
+          <h1>you came early…</h1>
+          <p>the portfolio is not ready yet. neither am i :(</p>
+
+          <p class="meanwhile">
+            please play with these while i pretend to finish it ↓
+          </p>
+
+          <div class="project-groups">
+            <div class="project-group bag-group">
+              <span class="group-label">print your bag</span>
+              <a class="project-link" data-link="bag" href="#">
+                <img src="./assets/bag.svg" alt="" aria-hidden="true" />
+                <span>3D bag</span>
+              </a>
+            </div>
+
+            <div class="project-group apps-group">
+              <span class="group-label">try apps i made</span>
+              <div class="app-links">
+                <a class="project-link" data-link="willow" href="#">
+                  <img src="./assets/willow.svg" alt="" aria-hidden="true" />
+                  <span>Willow</span>
+                </a>
+                <a class="project-link" data-link="chrome" href="#">
+                  <img src="./assets/chrome.svg" alt="" aria-hidden="true" />
+                  <span>Chromé</span>
+                </a>
+                <a class="project-link" data-link="cellfie" href="#">
+                  <img src="./assets/cellfie.svg" alt="" aria-hidden="true" />
+                  <span>Cellfie</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="note-footer">
+          <a id="emailLink" href="mailto:videllabeans@gmail.com">
+            email me while you wait
+          </a>
+          <button id="closeNote" type="button">close</button>
+        </footer>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
