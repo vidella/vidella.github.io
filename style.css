@@ -447,3 +447,18 @@ a {
     animation: notice-bounce 2.5s ease-in-out infinite !important;
   }
 }
+.github-link {
+  display: inline-flex;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.github-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+.github-link:hover,
+.github-link:focus-visible {
+  transform: translateY(-2px);
+}
